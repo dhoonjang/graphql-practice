@@ -4,5 +4,8 @@
   "description": "Movie API with Graphql",
   "main": "index.js",
   "repository": "https://github.com/dhoonjang/movieql",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.14.12"
+  }
 }
