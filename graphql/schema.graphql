@@ -3,7 +3,12 @@ type Query {
   person(id: Int!): person
 }
 
+type Mutation {
+  addPerson(name: String!, score: Int!): person!
+}
+
 type person {
+  id: Int!,
   name: String!,
   age: Int!,
   gender: String!
