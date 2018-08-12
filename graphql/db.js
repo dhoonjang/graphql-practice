@@ -37,9 +37,21 @@ export const deletePerson = (id) => {
   const cleanedPeople = people.filter(person => person.id !== id);
 
   if(people.length > cleanedPeople.length) {
-    people = cleanedPeople
+    people = cleanedPeople;
+
     return true;
   } else {
     return false;
   }
 };
+
+export const addPerson = (name, age, gender) => {
+  const newPerson = {
+    id: people.length,
+    name,
+    age,
+    gender
+  };
+  people.push(newPerson);
+  return newPerson;
+}
